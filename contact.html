@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Sopheez Cakery - Here is a list of some upcoming events that we will be present at.">
+        <meta name="author" content="Kerri-Ann Bates">
+        <meta name="robots" content="index, follow">
+        <meta name="dcterms.dateCopyrighted" content="2016">
+        <title>Sopheez | Events</title>
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Overlock" rel="stylesheet">
+        <script src="https://use.fontawesome.com/e8f868dcee.js"></script>
+    </head>
+    <body>
+      <header>
+        <div class="wrapper">
+            <div class="header-content">
+              <h1>Sopheez</h1>
+              <nav class="clearFix">
+                <ul class="clearFix">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a class="active" href="contact.html">Contact Us</a></li>
+                </ul>
+              </nav>
+            </div>
+        </div>
+      </header>
+        <div id="imgBanner">
+            <img id="rotate" src="images/contact-pic.jpg" alt="Laptop with cup of tea on the side for contact" height="500">
+        </div>
+        <main>
+          <div class="contact-content">
+              <div class="wrapper">
+                <h2>Contact Us</h2>
+                <div class="contact-forms-area">
+                  <div id="contact-holder" class="clearFix">
+                    <div id="order-form" class="form-container">
+                      <h3>Place your order!</h3>
+
+                      <!-- Contact form -->
+                      <form name="contactForm" onsubmit="return validateForm();" action="email-me.php" method="post">
+
+                        <!-- Hidden forms -->
+                        <input type="hidden" id="recipient" name="recipient" value="webdevteacher@gmail.com">
+                        <input type="hidden" id="redirect" name="redirect" value="redirect.html">
+                        <input type="hidden" id="subject" name="subject" value="Sopheez Orders">
+
+                        <!-- Order form -->
+                        <label for="fullName">Name:</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Type full name here"> <!-- Name input -->
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Type email address here"> <!-- Email input -->
+                        <label for="order">Order Details:</label>
+                        <textarea id="order" name="order" rows="8" cols="50" placeholder="Type details here"></textarea> <!-- Order input -->
+                        <input type="checkbox" name="newsletter" value="yes" checked> Send me newsletter <!-- Newsletter checkbox -->
+                        <input id="submit-order" type="submit" value="Submit!">
+                      </form>
+                    </div>
+
+                    <div id="comment-form" class="form-container">
+                      <h3>So...What do you think?</h3>
+
+                      <!-- Comments form -->
+                      <form action="email-me.php" onsubmit="return validateFormTwo();" name="commentForm" method="post">
+
+                        <!-- Hidden forms -->
+                        <input type="hidden" id="recipient" name="recipient" value="webdevteacher@gmail.com">
+                        <input type="hidden" id="redirect" name="redirect" value="redirect.html">
+                        <input type="hidden" id="subject" name="subject" value="Sopheez Comments">
+                        <input type="hidden" id="email" name="email" value="kaybee1jam@yahoo.com">
+
+
+                        <label for="subject">Subject:</label>
+                        <input type="text" name="subject"> <!-- Comments input -->
+                        <label for="comments">Comments:</label>
+                        <textarea id="comments" name="comments" rows="8" cols="50" placeholder="Write your comment here.."></textarea> <!-- Comments input -->
+                        <input id="submit-comments" type="submit" value="Submit!">
+                      </form>
+                      <p>Call Us: 407-555-5555</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </main>
+        <footer>
+          <div class="wrapper">
+            <div id="copyright-content-footer" class="clearFix">
+              <p id="copyright">Copyright 2016 Sopheez Cakery &copy;</p>
+                <div id="connection">
+                  <p>Connect with us:</p>
+                  <i class="fa fa-facebook-square fa-lg" id="fbIcon" aria-hidden="true"></i>
+                  <p>Facebook</p>
+                </div>
+              </div>
+              <nav>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="cantact.html">Contact Us</a></li>
+                </ul>
+              </nav>
+          </div>
+        </footer>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
